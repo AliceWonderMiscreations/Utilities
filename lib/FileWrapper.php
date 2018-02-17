@@ -34,7 +34,7 @@
  |  available at https://github.com/nicolas-grekas/JSqueeze              |
  +-----------------------------------------------------------------------+
  | Class has three public functions:                                     |
- |   1) filewrapper(the constructor - see options in below section)      |
+ |   1) FileWrapper(the constructor - see options in below section)      |
  |   2) setAllowOrigin($origin) - call after the constructor if you need |
  |       to set a access-control-allow-origin header - note that if the  |
  |       file has a font mime type, this is automatically set to *       |
@@ -605,11 +605,8 @@ class FileWrapper {
   
   // minify JavaScript - by default turned off
   protected function jsminify($content) {
-    if(class_exists('JSqueeze')) {
-      $JSqueeze = new \Patchwork\JSqueeze();
-      return($JSqueeze->squeeze($content, true, false));
-    }
-    return($content);
+    $JSqueeze = new \Patchwork\JSqueeze();
+    return($JSqueeze->squeeze($content, true, false));
   }
   
   // minify CSS - by default turned off
@@ -779,7 +776,7 @@ class FileWrapper {
   }
   
   // constructor function
-  public function filewrapper($path, $request='', $mime='', $maxage=604800, $attachment=FALSE) {
+  public function FileWrapper($path, $request='', $mime='', $maxage=604800, $attachment=FALSE) {
     if(file_exists($path)) {
       $this->REQHEADERS=array_change_key_case(getallheaders(), CASE_LOWER);
       $this->path = $path;
