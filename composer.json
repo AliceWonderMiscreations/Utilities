@@ -1,0 +1,21 @@
+{
+  "name": "alicewondermiscreations/utilities",
+  "type": "library",
+  "description": "A collection of classes I wrote that I frequently use",
+  "homepage": "https://github.com/AliceWonderMiscreations/Utilities",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alice Wonder"
+    }
+  ],
+  "require": {
+    "patchwork/jsqueeze": "~2.0",
+    "ext-dom" : "*"
+  }
+  "autoload": {
+    "psr-4": {
+      "AliceWonderMiscreations\\Utilities\\": "lib/"
+    }
+  }
+}
