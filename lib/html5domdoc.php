@@ -272,7 +272,7 @@ class html5domdoc {
   protected function fixArticleLandmarks() {
     $articlelist = $this->xmlBody->getElementsByTagName('article');
     $nn = $articlelist->length;
-    $x = new DOMXPath($this->dom);
+    $x = new \DOMXPath($this->dom);
     for($ii = 0; $ii < $nn; $ii++) {
       $arnode = $articlelist->item($ii);
       $nodelist = $arnode->getElementsByTagName('aside');
