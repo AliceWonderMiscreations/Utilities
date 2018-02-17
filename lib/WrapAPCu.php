@@ -14,7 +14,7 @@
  +-------------------------------------------------------+
 */
 
-namespace AliceWonderMiscreations\Utilities
+namespace AliceWonderMiscreations\Utilities;
 
 class WrapAPCu {
   protected $enabled = false;

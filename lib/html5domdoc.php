@@ -11,7 +11,7 @@
  +-----------------------------------------------------------------------+
 */
 
-namespace AliceWonderMiscreations\Utilities
+namespace AliceWonderMiscreations\Utilities;
 
 class html5domdoc {
   protected $dom;
