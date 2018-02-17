@@ -6,7 +6,23 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Alice Wonder"
+      "name": "Alice Wonder",
+      "role": "Unemployed Maniac"
+    },
+    {
+      "name": "Manas Tungare",
+      "homepage": "https://github.com/manastungare",
+      "role": "Github gist Solution"
+    },
+    {
+      "name": "Brenton Strine",
+      "homepage": "https://github.com/brentonstrine",
+      "role": "Github gist Solution"
+    },
+    {
+      "name": "Fosfor",
+      "homepage": "https://stackoverflow.com/users/615627/fosfor",
+      "role": "StackOverflow Solution"
     }
   ],
   "require": {
