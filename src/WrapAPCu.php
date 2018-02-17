@@ -9,14 +9,14 @@
  | And fuck PSR-2 - I like two spaces for tabs, dammit!  |
  |                                                       |
  +-------------------------------------------------------+
- | Purpose: Wrapper class for APCU caching that does not |
+ | Purpose: Wrapper class for APCu caching that does not |
  |  puke if APCu gets disabled.                          |
  +-------------------------------------------------------+
 */
 
 namespace AliceWonderMiscreations\Utilities
 
-class WrapAPCU {
+class WrapAPCu {
   protected $enabled = false;
   //this is needed for clearing a web applicatiion specific
   // cache w/o impacting other web apps on same server
