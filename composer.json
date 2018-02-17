@@ -28,7 +28,7 @@
   "require": {
     "patchwork/jsqueeze": "~2.0",
     "ext-dom" : "*"
-  }
+  },
   "autoload": {
     "psr-4": {
       "AliceWonderMiscreations\\Utilities\\": "lib/"
